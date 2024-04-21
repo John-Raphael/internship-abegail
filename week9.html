@@ -27,12 +27,6 @@
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
     <link rel="stylesheet" href="css/style.css" />
-
-    <style>
-      .mySlides {
-        display: none;
-      }
-    </style>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
     <nav
@@ -106,7 +100,7 @@
                 ><a href="blog.html"
                   >Blog <i class="ion-ios-arrow-forward"></i></a
               ></span>
-              <span>Week 7<i class="ion-ios-arrow-forward"></i></span>
+              <span>Week 9<i class="ion-ios-arrow-forward"></i></span>
             </p>
           </div>
         </div>
@@ -122,76 +116,48 @@
             </h2>
 
             <p>
-              <img
-                src="images/week7-profile.png"
-                alt=""
-                class="img-fluid mySlides"
-              />
-              <img
-                src="images/week7-profile2.png"
-                alt=""
-                class="img-fluid mySlides"
-              />
-              <img
-                src="images/week7-profile3.png"
-                alt=""
-                class="img-fluid mySlides"
-              />
+              <img src="images/week9-profile.png" alt="" class="img-fluid" />
             </p>
 
-            <h1 class="mb-3 mt-5" style="font-weight: bolder">WEEK 7</h1>
+            <h1 class="mb-3 mt-5" style="font-weight: bolder">WEEK 9</h1>
             <h3 id="day1-section">DAY 1</h3>
             <p>
-              Since the omph is not yet done and there is so much more thing to
-              do and i temporarily stop the configuration of GA4 and FB pixel.
-              Sir maf and Sir ricz shift me to another website to do a same task
-              that i did in Tour with ease and organic market. After accepting
-              the invitation from Sir maf in GA4 and Google tag manager and FB
-              pixel first thing i did was implementing a new GA4 for ITT. I set
-              up data collection from the website and added essential plugins.
-              Then, I installed and set up Google Tag Manager (GTM) to work with
-              the site, ensuring it runs smoothly across all pages. Afterward, I
-              double-checked to confirm GTM works well. Lastly, I added custom
-              events tailored specifically for ITT’s needs.
+              I marked defined events as conversions in GA4, tested and
+              confirmed tag triggers using GTM Preview mode, and included
+              built-in variables to capture dynamic values accurately. These
+              steps ensure precise tracking and reporting of user interactions
+              for effective data analysis and optimization in Google Analytics.
             </p>
             <h3 id="day2-section">DAY 2</h3>
             <p>
-              The day after, I’ll create special events for Iran Travel Tours
-              and connect website purchases to Google Analytics 4. I’ll keep
-              checking and improving event tracking to make sure it’s correct.
-              Also, I’ll make custom events in Google Tag Manager for Iran
-              Travel Tours actions and set up triggers and tags to track those
-              actions accurately.
+              I crafted a funnel visualization in GA4 to map the organic product
+              purchase journey, pinpointing critical drop-off points for
+              optimization. Additionally, I segmented audiences based on organic
+              product interactions, tailoring marketing efforts and insights to
+              enhance engagement and conversion rates within this specific
+              customer segment.
             </p>
             <h3 id="day3-section">DAY 3</h3>
             <p>
-              Next, I’ll check if the custom events are working by looking at
-              the real-time report in Google Analytics 4. Then, I’ll set up a
-              visual funnel in GA4 to see how people buy Iran Travel Tours. I’ll
-              also make sure our website follows data privacy laws and add a
-              CookieYes banner for cookie consent. Finally, I’ll create
-              different groups of people interested in Iran Travel Tours to
-              analyze their behavior separately.
+              The next day, I watched a tutorial on YouTube about creating
+              audiences in GA4. While watching, I followed along in GA4,
+              creating new audiences for the Iran Travel Tours website. I
+              segmented new users based on their website activity and location,
+              then published them to make them visible.
             </p>
             <h3 id="day4-section">DAY 4</h3>
             <p>
-              Kristine held a meeting to a new paltfom called gather, she
-              informed us on a meeting that we will be using this platform
-              everytime we have meeting to her. During our meeting as usual, she
-              asked us about our progress on our task individually to put it in
-              a gsheet form so she can send it to sir maf for our report.
+              After that day, I continued what I was doing yesterday, which is
+              creating new audiences for Iran Travel Tours. Then, I also did the
+              same for Tour with Ease and Organic Market because I hadn't added
+              any audiences yet.
             </p>
+
             <h3 id="day5-section">DAY 5</h3>
             <p>
-              On my 7 week here at strastan. I’ll use the Facebook Pixel Helper
-              tool on Chrome to check if our pixel is working correctly. Then,
-              I’ll go into Facebook’s Events Manager to see if all our events
-              are tracking as they should. I’ll keep an eye on the Events
-              Manager regularly to make sure everything stays on track. I’ll
-              also review the best practices for integrating Google Tag Manager
-              with Facebook Pixel to ensure smooth data transfer. Lastly, I’ll
-              update any settings or configurations to optimize our tracking
-              efforts.
+              The next day, I watched a video about utilizing other segments in
+              GA4 and how to apply them to ensure the reliability of data
+              captured by GA4 from the website
             </p>
             <div class="tag-widget post-tag-container mb-5 mt-5">
               <div class="tagcloud">
@@ -373,24 +339,5 @@
     <script src="js/scrollax.min.js"></script>
 
     <script src="js/main.js"></script>
-
-    <script>
-      var myIndex = 0;
-      carousel();
-
-      function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        myIndex++;
-        if (myIndex > x.length) {
-          myIndex = 1;
-        }
-        x[myIndex - 1].style.display = "block";
-        setTimeout(carousel, 3000); // Change image every 2 seconds
-      }
-    </script>
   </body>
 </html>
