@@ -27,6 +27,12 @@
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
     <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      .mySlides {
+        display: none;
+      }
+    </style>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
     <nav
@@ -116,7 +122,16 @@
             </h2>
 
             <p>
-              <img src="images/week9-profile.png" alt="" class="img-fluid" />
+              <img
+                src="images/week9-profile.png"
+                alt=""
+                class="img-fluid mySlides"
+              />
+              <img
+                src="images/week9-profile2.png"
+                alt=""
+                class="img-fluid mySlides"
+              />
             </p>
 
             <h1 class="mb-3 mt-5" style="font-weight: bolder">WEEK 9</h1>
@@ -225,7 +240,7 @@
               <div class="block-21 mb-4 d-flex">
                 <a
                   class="blog-img mr-4"
-                  style="background-image: url(blog-images/week2-3.jpg)"
+                  style="background-image: url(images/week9-profile2.png)"
                 ></a>
                 <div class="text">
                   <h3 class="heading">
@@ -244,7 +259,7 @@
               <div class="block-21 mb-4 d-flex">
                 <a
                   class="blog-img mr-4"
-                  style="background-image: url(blog-images/week2-4.jpg)"
+                  style="background-image: url(blog-images/week2-2.jpg)"
                 ></a>
                 <div class="text">
                   <h3 class="heading">
@@ -264,7 +279,7 @@
               <div class="block-21 mb-4 d-flex">
                 <a
                   class="blog-img mr-4"
-                  style="background-image: url(blog-images/week2-5.jpg)"
+                  style="background-image: url(blog-images/week2-3.jpg)"
                 ></a>
                 <div class="text">
                   <h3 class="heading">
@@ -339,5 +354,24 @@
     <script src="js/scrollax.min.js"></script>
 
     <script src="js/main.js"></script>
+
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 3000); // Change image every 2 seconds
+      }
+    </script>
   </body>
 </html>
